@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
+    color: #ffd38c;
 }
 
 body {
-    background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_auto,q_auto:best/mpx/2704722219/2023_11/1700486907837_tdy_news_8a_kreutz_mystery_dog_illness_231120_1920x1080-ggrpnf.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #222222;
     padding: 20px;
+}
+
+nav{
+    background-color: #222222;
 }
 
 img {
@@ -23,7 +26,7 @@ img {
 
 .card {
     display: flex;
-    background-color: white;
+    background-color: #353535;
     padding: 20px;
     margin-top: 20px;
     width: 60%;

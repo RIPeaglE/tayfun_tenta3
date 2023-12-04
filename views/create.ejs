@@ -6,20 +6,16 @@
   <title>Create User</title>
   <style>
     body {
-      background-image: url(https://www.purina.co.uk/sites/default/files/2020-12/Dog_1098119012_Teaser.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
       margin: 0;
       padding: 0;
-      background-color: #17a2b8;
       height: 100vh;
     }
     #create .container #create-row #create-column #create-box {
       margin-top: 120px;
       max-width: 600px;
       height: 400px;
-      border: 1px solid #9C9C9C;
-      background-color: #EAEAEA;
+      background-color: #353535;
+      color: #ffd38c;
     }
     #create .container #create-row #create-column #create-box #create-form {
       padding: 20px;
@@ -28,32 +24,32 @@
   </style>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #222222;">
   <div id="create">
     <div class="container">
       <div id="create-row" class="row justify-content-center align-items-center">
         <div id="create-column" class="col-md-6">
           <div id="create-box" class="col-md-12">
             <form id="create-form" class="form" action="/create" method="post">
-              <h3 class="text-center text-info">Create User</h3>
+              <h3 class="text-center text">Create User</h3>
               <div class="form-group">
-                <label for="username" class="text-info">Username:</label><br>
+                <label for="username" class="text">Username:</label><br>
                 <input type="text" name="username" id="username" class="form-control" required>
               </div>
               <div class="form-group">
-                <label for="password" class="text-info">Password:</label><br>
+                <label for="password" class="text">Password:</label><br>
                 <input type="password" name="password" id="password" class="form-control" required>
               </div>
               <div class="form-group">
-                <label for="roll" class="text-info">Select your role:</label>
+                <label for="roll" class="text">Select your role:</label>
                 <select id="roll" name="roll" class="form-control" required>
                   <option>Välj din roll</option>
                   <option value="admin">Admin</option>
                   <option value="user">User</option>
                 </select>
               </div>
-              <button type="submit" name="submit" class="btn btn-info btn-md">Create User</button>
-              <a href="/" id="login-link" class="btn btn-info btn-md">Login here</a>
+              <button type="submit" name="submit" style="color: #ffd38c;" class="btn btn-md">Create User</button>
+              <a href="/" id="login-link" style="color: #ffd38c;" class="btn btn btn-md">Login here</a>
             </form>
           </div>
         </div>
