@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_focal-760x428,f_auto,q_auto:best/mpx/2704722219/2023_11/1700486907837_tdy_news_8a_kreutz_mystery_dog_illness_231120_1920x1080-ggrpnf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+img {
+    max-height: 100%; 
+    max-width: 100%;  
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center; 
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 60%;
+    max-height: auto;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start; 
+}
+  
+.image-container {
+    margin-right: 20px; 
+    overflow: hidden;
+    max-width: 40%; 
+}
+
+.comment-container {
+    flex-grow: 1;
+}
+
+.comment-container p {
+    inline-size: 400px;
+    overflow-wrap: break-word;
+}
+
+

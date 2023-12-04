@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+  <style>
+    body {
+      background-image: url(https://www.purina.co.uk/sites/default/files/2020-12/Dog_1098119012_Teaser.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      background-color: #17a2b8;
+      height: 100vh;
+    }
+    #create .container #create-row #create-column #create-box {
+      margin-top: 120px;
+      max-width: 600px;
+      height: auto;
+      border: 1px solid #9C9C9C;
+      background-color: #EAEAEA;
+    }
+    #create .container #create-row #create-column #create-box #create-form {
+      padding: 20px;
+    }
+  </style>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/flow">Flow</a>
+    </nav>
+    <div id="create">
+        <div class="container">
+            <div id="create-row" class="row justify-content-center align-items-center">
+                <div id="create-column" class="col-md-6">
+                    <div id="create-box" class="col-md-12">
+                        <form id="create-form" class="form" action="/createPost" method="post" enctype="multipart/form-data">
+                            <h3 class="text-center text-info">Create a new post</h3>
+                            <div class="form-group">
+                                <label for="title" class="text-info">Titel:</label><br>
+                                <input type="text" name="title" id="title" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="image" class="text-info">Image</label><br>
+                                <input type="file" accept="image/*" id="image" name="image">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment" class="text-info">Beskrivning:</label><br>
+                                <textarea name="comment" id="comment" class="form-control" rows="4" maxlength="200"></textarea>
+                                <p>(max 200)</p>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-info btn-md">Post</button>
+                            <a href="/admin-dashboard" type="submit" name="submit" class="btn btn-info btn-md">tillbaka</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
