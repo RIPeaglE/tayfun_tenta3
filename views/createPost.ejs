@@ -6,18 +6,16 @@
   <title>Create User</title>
   <style>
     body {
-      background-color: #243e36;
       margin: 0;
       padding: 0;
-      background-color: #17a2b8;
       height: 100vh;
     }
     #create .container #create-row #create-column #create-box {
       margin-top: 120px;
       max-width: 600px;
       height: auto;
-      border: 1px solid #9C9C9C;
-      background-color: #EAEAEA;
+      background-color: #353535;
+      color: #ffd38c;
     }
     #create .container #create-row #create-column #create-box #create-form {
       padding: 20px;
@@ -25,29 +23,29 @@
   </style>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #222222;">
     <div id="create">
         <div class="container">
             <div id="create-row" class="row justify-content-center align-items-center">
                 <div id="create-column" class="col-md-6">
                     <div id="create-box" class="col-md-12">
                         <form id="create-form" class="form" action="/createPost" method="post" enctype="multipart/form-data">
-                            <h3 class="text-center text-info">Create a new post</h3>
+                            <h3 class="text-center text">Create a new post</h3>
                             <div class="form-group">
-                                <label for="title" class="text-info">Titel:</label><br>
+                                <label for="title" class="text">Titel:</label><br>
                                 <input type="text" name="title" id="title" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="image" class="text-info">Image</label><br>
+                                <label for="image" class="text">Image</label><br>
                                 <input type="file" accept="image/*" id="image" name="image">
                             </div>
                             <div class="form-group">
-                                <label for="comment" class="text-info">Beskrivning:</label><br>
+                                <label for="comment" class="text">Beskrivning:</label><br>
                                 <textarea name="comment" id="comment" class="form-control" rows="4" maxlength="200"></textarea>
                                 <p>(max 200)</p>
                             </div>
-                            <button type="submit" name="submit" class="btn btn-info btn-md">Post</button>
-                            <a href="/admin-dashboard" type="submit" name="submit" class="btn btn-info btn-md">tillbaka</a>
+                            <button type="submit" name="submit" style="color: #ffd38c;" class="btn btn btn-md">Post</button>
+                            <a href="/admin-dashboard" type="submit" style="color: #ffd38c;" name="submit" class="btn btn btn-md">Tillbaka</a>
                         </form>
                     </div>
                 </div>
